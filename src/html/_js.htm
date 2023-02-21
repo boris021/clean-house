@@ -1,13 +1,6 @@
 <script src="js/app.min.js"></script>
 
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
-
-<script src="https://cdnjs.cloudflare.com/ajax/libs/vivus/0.4.6/vivus.min.js"
-	integrity="sha512-oUUeA7VTcWBqUJD/VYCBB4VeIE0g1pg5aRMiSUOMGnNNeCLRS39OlkcyyeJ0hYx2h3zxmIWhyKiUXKkfZ5Wryg=="
-	crossorigin="anonymous" referrerpolicy="no-referrer"></script>
 <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css">
-
-<script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
 
 <script>
 	window.addEventListener("DOMContentLoaded", function () {
@@ -48,75 +41,4 @@
 		});
 
 	});
-</script>
-
-<script>
-	function onEntry(entry) {
-		entry.forEach(change => {
-			if (change.isIntersecting) {
-				change.target.classList.add('element-show');
-			}
-		});
-	}
-
-	let options = {
-		threshold: [0.5]
-	};
-	let observer = new IntersectionObserver(onEntry, options);
-	let elements = document.querySelectorAll('.element-animation');
-
-	for (let elm of elements) {
-		observer.observe(elm);
-	}
-</script>
-
-<script>
-	window.onload = function () {
-		document.body.classList.add('loaded');
-	}
-</script>
-
-<script>
-	window.onload = function () {
-		document.body.classList.add('loaded_hiding');
-		window.setTimeout(function () {
-			document.body.classList.add('loaded');
-			document.body.classList.remove('loaded_hiding');
-		}, 500);
-	}
-</script>
-
-<script>
-	// Here, the ease animation will be use for the global drawing.
-	new Vivus(
-		'mysvg1', {
-			type: 'sync',
-			duration: 400,
-		},
-	);
-
-	new Vivus(
-		'mysvg2', {
-			type: 'sync',
-			duration: 400,
-		},
-	);
-	new Vivus(
-		'mysvg3', {
-			type: 'sync',
-			duration: 200,
-		},
-	);
-	new Vivus(
-		'mysvg4', {
-			type: 'sync',
-			duration: 180,
-		},
-	);
-	new Vivus(
-		'mysvg5', {
-			type: 'sync',
-			duration: 700,
-		},
-	);
 </script>
