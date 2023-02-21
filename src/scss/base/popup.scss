@@ -186,7 +186,7 @@ body::after {
 	display: flex;
 	align-items: center;
 	justify-content: center;
-	background-color: $colorRed;
+	background-color: red;
 	color: #fff;
 }
 
@@ -220,7 +220,7 @@ body::after {
 	}
 
 	&__close-btn {
-		background-color: $colorRed;
+		background-color: red;
 		color: #fff;
 		box-shadow: 0px 7px 35px rgba(0, 57, 118, 0.7);
 		border-radius: 20px;
